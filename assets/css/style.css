@@ -46,8 +46,8 @@ header h2 {
 	padding: 25px 0;
 }
 
-.about img {
-	height: 250px;
+.about #my-photo {
+	/* height: 250px; */
 	width: 380px;
 	border: 5px solid #c0c0c0;
 	/* margin: 25px 0 25px 25px; */
@@ -127,8 +127,7 @@ header h2 {
 		rgba(236, 228, 235, 1) 50%,
 		rgba(255, 255, 255, 1) 100%
 	);
-	height: 620px;
-	width: 267px;
+	width: 267.4px;
 	margin-left: 25px;
 	vertical-align: top;
 	text-align: center;
@@ -139,7 +138,7 @@ header h2 {
 	border: 0;
 	display: inline-block;
 	width: 267px;
-	height: 144px;
+	/* height: 144px; */
 }
 
 .card-items p {
@@ -199,30 +198,61 @@ footer a {
 	font-style: italic;
 }
 
-/* @media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) {
+
+	.cards .card-items .photo-project {
+		width: 380px;
+	}
+
+	.about-item p {
+		font-size: 11px;
+	}
+
     .sm-12 {
-        width: 100%;
-        background-color: red;
+		margin-top: 25px;
+		display: block;
     }
 
     .sm-0 {
         display: none;
     }
-} */
+}
 
 @media only screen and (min-width: 481px) {
 
+	.cards {
+		/* width: 768px; */
+		display: block;
+	}
+
 	.card-items {
-		outline: 1px solid chartreuse;
+		margin-top: 25px;
+		display: inline-block;
+	}
+
+	.cards .card-items .photo-project {
+		display: block;
+		width: 412px;
+	}
+
+	.cards .card-items .technologies {
+		display: block;
+		width: 250px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.cards .card-items .technologies img {
+		margin: 5px;
 	}
 
     .md-12 {
 		display: block;
 		margin: 0 25px 0px;
 	}
-	
+
 	.md-6 {
-		width: 50%;
+		width: 45.5%;
 	}
 
     .md-0 {
@@ -232,8 +262,23 @@ footer a {
 
 @media only screen and (min-width: 1024px) {
 
+	.cards {
+		width: 911px;
+		display: block;
+	}
+
 	.cards .card-items p {
 		display: block;
+	}
+
+	.cards .card-items .photo-project {
+		width: 267px;
+	}
+
+	.cards .card-items .technologies {
+		display: block;
+		width: 267px;
+		text-align: left;
 	}
 
 	.container header h2 {
@@ -252,7 +297,7 @@ footer a {
 
     .lg-6 {
         display: inline-block;
-		margin: 0 25px 25px;
+		margin: 0 25px 0;
     }
 
     .lg-4 {
@@ -260,3 +305,5 @@ footer a {
 		width: 267px;
     }
 }
+
+/* checkpoint */
