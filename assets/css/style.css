@@ -127,8 +127,7 @@ header h2 {
 		rgba(236, 228, 235, 1) 50%,
 		rgba(255, 255, 255, 1) 100%
 	);
-	height: 620px;
-	width: 267px;
+	width: 267.4px;
 	margin-left: 25px;
 	vertical-align: top;
 	text-align: center;
@@ -212,8 +211,12 @@ footer a {
 
 @media only screen and (min-width: 481px) {
 
+	.cards {
+		margin: 0 auto;
+	}
+
 	.card-items {
-		outline: 1px solid chartreuse;
+		margin-top: 25px;
 	}
 
     .md-12 {
